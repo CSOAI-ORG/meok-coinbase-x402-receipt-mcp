@@ -1,0 +1,9 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CSOAI-ORG/meok-coinbase-x402-receipt-mcp",
+  "version": "1.0.0",
+  "description": "MEOK Coinbase x402 Receipt MCP — signed settlement receipts for agentic payments. Base/Polygon/Solana/Lightning/Arbitrum/Optimism. MiCA Article 60 + 64 crosswalk. Stripe ACP linkage. By MEOK AI Labs.",
+  "repository": { "url": "https://github.com/CSOAI-ORG/meok-coinbase-x402-receipt-mcp", "source": "github" },
+  "packages": [{ "registryType": "pypi", "identifier": "meok-coinbase-x402-receipt-mcp", "version": "1.0.0", "runtimeHint": "python", "transport": { "type": "stdio" } }],
+  "remotes": [{ "type": "streamable-http", "url": "https://api.meok.ai/v1/a2a/x402-receipt" }]
+}
