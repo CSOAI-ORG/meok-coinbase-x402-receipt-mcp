@@ -1,0 +1,31 @@
+{
+  "name": "meok-coinbase-x402-receipt-mcp",
+  "title": "Meok Coinbase X402 Receipt Mcp",
+  "description": "MEOK Coinbase x402 Receipt MCP \u2014 signed settlement receipts for agentic payments. Base/Polygon/Solana/Lightning/Arbitrum/Optimism. MiCA Article 60 + 64 crosswalk. Stripe ACP linkage. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "emit_x402_receipt"
+    },
+    {
+      "name": "verify_receipt"
+    },
+    {
+      "name": "crosswalk_to_mica"
+    },
+    {
+      "name": "bridge_to_stripe_acp"
+    },
+    {
+      "name": "list_supported_chains"
+    },
+    {
+      "name": "sign_settlement_chain"
+    }
+  ]
+}

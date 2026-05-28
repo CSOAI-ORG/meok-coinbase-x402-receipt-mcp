@@ -1,0 +1,22 @@
+# meok-coinbase-x402-receipt-mcp
+
+> MEOK Coinbase x402 Receipt MCP — signed settlement receipts for agentic payments. Base/Polygon/Solana/Lightning/Arbitrum/Optimism. MiCA Article 60 + 64 crosswalk. Stripe ACP linkage. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- emit_x402_receipt
+- verify_receipt
+- crosswalk_to_mica
+- bridge_to_stripe_acp
+- list_supported_chains
+- sign_settlement_chain
+
+## Install
+```
+pip install meok-coinbase-x402-receipt-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/meok-coinbase-x402-receipt-mcp/
+- Docs: https://meok.ai
