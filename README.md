@@ -1,76 +1,78 @@
-# MEOK Coinbase x402 Receipt MCP
+# Meok Coinbase X402 Receipt MCP
 
-> ## 🧱 Part of the MEOK A2A Substrate (£999/mo)
-> See [meok.ai/a2a](https://meok.ai/a2a).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_coinbase_x402_receipt_mcp/)
 
-# Signed settlement receipts for x402 / Coinbase / on-chain agentic payments
+> Signed x402 settlement receipts - 7 chains + MiCA crosswalk + Stripe ACP linkage
 
-<!-- mcp-name: io.github.CSOAI-ORG/meok-coinbase-x402-receipt-mcp -->
+Signed x402 settlement receipts - 7 chains + MiCA crosswalk + Stripe ACP linkage. MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/meok-coinbase-x402-receipt-mcp)](https://pypi.org/project/meok-coinbase-x402-receipt-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this does
+## 🚀 Quick Start
 
-Closes the agentic-payment chain. After an agent settles a Coinbase HTTP 402 payment (via `meok-x402-wrap-mcp` / `agent-x402-paywall-mcp`), this MCP emits a non-repudiable **signed receipt** covering:
+```bash
+# Install via pip
+pip install meok_coinbase_x402_receipt_mcp
 
-- Settlement chain (Base / Polygon / Solana / Lightning / Arbitrum / Optimism / Ethereum)
-- Tx hash + block explorer URL + confirmation count
-- Amount + currency + fiat EUR equivalent at settlement time
-- Payer + payee DIDs
-- Optional Stripe ACP linkage (intent_id, charge_id)
-- Optional AP2 mandate linkage (mandate_id)
-- HMAC + DID-bound signature
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-coinbase-x402-receipt-mcp --client claude
+```
 
-## Why this matters
+## ✨ Features
 
-EU MiCA + UK FCA crypto-asset rules require **non-repudiable settlement proof** for agentic transactions. Stripe ACP receipts cover card flows; this covers crypto flows. This MCP is the only thing that closes that gap.
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Tools
+## 📖 Documentation
 
-| Tool | Purpose |
-|---|---|
-| `emit_x402_receipt(tx_hash, chain, amount, currency, payer_did, payee_did, ...)` | Signed receipt |
-| `verify_receipt(receipt)` | Cryptographic verification |
-| `crosswalk_to_mica(receipt)` | MiCA Article 60 + 64 reporting fields |
-| `bridge_to_stripe_acp(receipt, intent_id)` | Cross-protocol audit linkage |
-| `list_supported_chains()` | 7 chains catalogued |
-| `sign_settlement_chain(receipt_id, signer_did)` | DID-bound seal |
+- [Full Documentation](https://docs.meok.ai/meok-coinbase-x402-receipt-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Sister MCPs
+## 🛡️ Compliance
 
-- `agent-x402-paywall-mcp` — produces the on-chain settlement (this MCP receipts it)
-- `meok-x402-wrap-mcp` — 1-line USDC paywall
-- `meok-stripe-acp-checkout-mcp` — Stripe ACP intent linkage
-- `meok-ap2-mandate-mcp` — AP2 mandate linkage
-- `agent-audit-logger-mcp` — chain-of-custody log
+This MCP server is built with **EU AI Act compliance** built-in:
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-## Pricing
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| A2A Substrate | £999/mo |
-| Defence | £4,990/mo |
+## 🏢 Enterprise
 
-Buy: https://meok.ai/a2a
+Need custom development, SLA guarantees, or white-label deployment?
 
-## Wire it up — full stack
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-The closed agentic-payment chain:
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-1. **meok-ap2-mandate-mcp** — user signs spend authorisation
-2. **meok-stripe-acp-checkout-mcp** OR **agent-x402-paywall-mcp** — initiate
-3. **agent-commerce-payments-mcp** (card) OR on-chain settlement
-4. **meok-coinbase-x402-receipt-mcp** — this MCP (signs the settlement)
-5. **agent-audit-logger-mcp** — chain-of-custody log
-6. **a2a-governance-bridge-mcp** — fold into 1 signed event
+## 🤝 Part of the MEOK Ecosystem
 
-See [meok.ai/mcp-stack](https://meok.ai/mcp-stack).
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-## Licence
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
