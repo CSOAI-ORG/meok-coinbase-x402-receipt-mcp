@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meok-coinbase-x402-receipt-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "MEOK Coinbase x402 Receipt MCP — signed settlement receipts for agentic payments. Base/Polygon/Solana/Lightning/Arbitrum/Optimism. MiCA Article 60 + 64 crosswalk. Stripe ACP linkage. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }

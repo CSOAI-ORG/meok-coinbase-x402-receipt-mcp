@@ -1,4 +1,7 @@
 # Meok Coinbase X402 Receipt MCP
+mcp-name: io.github.CSOAI-ORG/meok-coinbase-x402-receipt-mcp
+
+# MEOK Coinbase x402 Receipt MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
@@ -118,3 +121,4 @@ Once configured, ask your assistant, for example:
 - "Use `emit_x402_receipt` to …"
 - "Use `verify_receipt` to …"
 - "Use `crosswalk_to_mica` to …"
+<!-- BUY-LADDER:END -->
