@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "meok-coinbase-x402-receipt-mcp",
+    "description": "MEOK Coinbase x402 Receipt MCP \u2014 signed settlement receipts for agentic payments",
+    "version": "1.0.1",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "meok-coinbase-x402-receipt-mcp"
+      }
+    ],
+    "capabilities": [
+      "emit_x402_receipt",
+      "verify_receipt",
+      "crosswalk_to_mica",
+      "bridge_to_stripe_acp",
+      "list_supported_chains",
+      "sign_settlement_chain"
+    ]
+  }
+}
