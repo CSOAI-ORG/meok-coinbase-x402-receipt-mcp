@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "meok-coinbase-x402-receipt-mcp": {
+      "command": "uvx",
+      "args": [
+        "meok-coinbase-x402-receipt-mcp"
+      ]
+    }
+  }
+}
