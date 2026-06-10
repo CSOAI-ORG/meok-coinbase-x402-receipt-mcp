@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/meok-coinbase-x402-receipt-mcp",
-  "version": "1.0.0",
-  "description": "MEOK Coinbase x402 Receipt MCP \u2014 signed settlement receipts for agentic payments",
+  "version": "1.0.1",
+  "description": "MEOK Coinbase x402 Receipt MCP — signed settlement receipts for agentic payments",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/meok-coinbase-x402-receipt-mcp",
     "source": "github"
@@ -11,7 +11,7 @@
     {
       "registryType": "pypi",
       "identifier": "meok-coinbase-x402-receipt-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"
