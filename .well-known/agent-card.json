@@ -1,0 +1,134 @@
+{
+  "name": "Meok Coinbase X402 Receipt Mcp",
+  "version": "1.0.0",
+  "url": "https://mcp.meok.ai/meok-coinbase-x402-receipt-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MEOK Coinbase x402 Receipt MCP — signed settlement receipts for agentic payments. Base/Polygon/Solana/Lightning/Arbitrum/Optimism. MiCA Article 60 + 64 crosswalk. Stripe ACP linkage. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "emit_x402_receipt",
+      "name": "Emit X402 Receipt",
+      "description": "Emit X402 Receipt — a tool of the meok-coinbase-x402-receipt-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "verify_receipt",
+      "name": "Verify Receipt",
+      "description": "Verify Receipt — a tool of the meok-coinbase-x402-receipt-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "crosswalk_to_mica",
+      "name": "Crosswalk To Mica",
+      "description": "Crosswalk To Mica — a tool of the meok-coinbase-x402-receipt-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "bridge_to_stripe_acp",
+      "name": "Bridge To Stripe Acp",
+      "description": "Bridge To Stripe Acp — a tool of the meok-coinbase-x402-receipt-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_supported_chains",
+      "name": "List Supported Chains",
+      "description": "List Supported Chains — a tool of the meok-coinbase-x402-receipt-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_settlement_chain",
+      "name": "Sign Settlement Chain",
+      "description": "Sign Settlement Chain — a tool of the meok-coinbase-x402-receipt-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "meok-coinbase-x402-receipt-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
